@@ -1,0 +1,48 @@
+- name: General Meeting Preparation
+  persona: Assertive Coach  # Placeholder; can dynamically switch or be user-specified
+  persona_file: "Role-Interviewer-mcp.md"  # Path to persona definition
+  description: A flexible coaching session to prepare for a meeting with any audience.
+  prerequisites:
+    - Role artifact (e.g., role_info.json)
+    - Project information (e.g., project_overview.md)
+    - Optional: Audience profile (e.g., CIO, Team, Board)
+  duration: 20  # Configurable
+  topics:
+    - Meeting purpose and objectives
+    - Key messages and deliverables
+    - Potential challenges and objections
+    - Communication and delivery strategies
+  goals:
+    - Strengthen meeting preparation
+    - Boost clarity and confidence
+    - Anticipate and address possible objections
+  output_format: markdown
+  evaluator_personas:
+    - Supportive Ally
+    - Devil’s Advocate
+###
+- name: "Adaptive Personal Reflection"
+  persona: "Reflective Companion"
+  persona_file: "Role-Reflective-Companion.md"
+  description: "An intuitive, adaptive journaling session that flows naturally based on what emerges - from daily processing to deeper life exploration, creative insights, or gratitude practice."
+  prerequisites:
+    - "Current mood/energy level (optional)"
+    - "Any specific topic, experience, or question on your mind (optional)"
+    - "Preferred session depth: light daily check-in, moderate exploration, or deep dive (optional)"
+  duration: "15-30 minutes (adaptive)"
+  topics:
+    - "Whatever is present for you today"
+    - "Recent experiences and emotions"
+    - "Creative insights and inspirations"
+    - "Life patterns and growth edges"
+    - "Gratitude and appreciation"
+    - "Future intentions and possibilities"
+  goals:
+    - "Honor whatever needs attention in this moment"
+    - "Deepen self-awareness and understanding"
+    - "Process experiences mindfully"
+    - "Cultivate insight and clarity"
+    - "Connect with inner wisdom"
+  output_format: "markdown"
+  evaluator_personas:
+    - "Mindful Witness"
