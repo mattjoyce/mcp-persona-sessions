@@ -45,7 +45,7 @@ Create your own personas and session frameworks for specific needs.
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/mcp-persona-sessions.git
+git clone https://github.com/mattjoyce/mcp-persona-sessions.git
 cd mcp-persona-sessions
 ```
 
