@@ -1,0 +1,4 @@
+persona_path: "roles"  # Directory containing persona files
+default_persona_file : "Role-Interviewer-mcp.md"  # Default persona file path: 
+default_interview_evaluator: "Role-Interview-Evaluator.md"  # Default evaluator persona file path
+interview_types_file: "interview_types.yaml"  # File containing interview types
