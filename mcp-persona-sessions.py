@@ -116,7 +116,7 @@ async def conduct_session(prerequisites :str, persona_content :str) -> str:
             f"---\n\n"
             f"<PREREQUISITES>\n{prerequisites}\n</PREREQUISITES>\n\n"
             f"""<FINAL_INSTRUCTIONS>
-            Check the timer before answering, every time.
+            MUST Check the timer status before answering, every time.
             This is role play for you as a session leader, so set the scene and stay in character.
             Always let the participant answer the current question.
             Finally, provide the transcript of the session in markdown format, and offer to provide feedback.
@@ -165,7 +165,7 @@ async def start_timer(duration_minutes: int = 0, name: str = "default") -> str:
         stats.tool_calls += 1
         result = timer_manager.start(name=name, minutes=duration_minutes)
         logger.info(f"Timer '{name}' started with duration {duration_minutes} minutes")
-        return f"🕒 {result}"
+        return f"🕒 {result} MUST check timer status often."
     except Exception as e:
         stats.errors += 1
         logger.error(f"Error starting timer: {e}")
