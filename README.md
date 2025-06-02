@@ -51,7 +51,7 @@ cd mcp-persona-sessions
 
 2. Install dependencies:
 ```bash
-pip install -r requirements.txt
+pip install fastmcp
 ```
 
 3. Set up configuration:
@@ -68,7 +68,7 @@ Add to your MCP client configuration (e.g., Claude Desktop):
 {
   "mcpServers": {
     "persona-sessions": {
-      "command": "python",
+      "command": "/path/to/venv/python",
       "args": ["/path/to/mcp-persona-sessions/mcp-persona-sessions.py"],
       "cwd": "/path/to/mcp-persona-sessions"
     }
@@ -80,55 +80,13 @@ Add to your MCP client configuration (e.g., Claude Desktop):
 
 ### Basic Session Flow
 
-1. **Browse Available Sessions**
-   ```
-   Use list_session_frameworks to see available session types
-   ```
+I use Claude as the mcp client, you might use something else.
+Simple ask claude to initiate a session.
 
-2. **Explore Personas**
-   ```
-   Use list_session_personas to see available personas
-   Use get_persona_details to understand a specific persona
-   ```
+"Claude, use your tools to run a mock meeting, this meeting is with XXX and is about YYY, duration 10 mins."
+If you have useful documents, include them with the request.
 
-3. **Start a Session**
-   ```
-   Use assess_session_readiness to check prerequisites
-   Use initialize_session to begin with your chosen persona
-   ```
 
-4. **Manage Time**
-   ```
-   Use start_timer to begin session timing
-   Use check_timer_status to monitor progress
-   Use stop_timer to conclude
-   ```
-
-5. **Get Feedback**
-   ```
-   Use get_session_feedback to analyze session performance
-   ```
-
-### Example: Meeting Preparation
-
-```
-1. "I need to prepare for a meeting with our new CIO about a project proposal"
-2. Browse session frameworks → Select "General Meeting Preparation"
-3. Browse personas → Select "Healthcare CIO" 
-4. Initialize session with project context
-5. Practice your presentation and Q&A
-6. Get detailed feedback on your responses
-```
-
-### Example: Personal Reflection
-
-```
-1. "I'd like to journal about my creative process"
-2. Select "Adaptive Personal Reflection" framework
-3. Start with "Reflective Companion" persona
-4. Explore creative tension, project patterns, decision-making
-5. Receive transcript for future reference
-```
 
 ## Configuration
 
